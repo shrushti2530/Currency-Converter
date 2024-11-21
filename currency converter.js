@@ -14,10 +14,10 @@ function convertCurrency() {
     const usdToInrRate = 83.0;  
 
     let convertedAmount;
-    if (direction === "INRtoUSD") {
+    if (direction === "INR to USD") {
         convertedAmount = amount * inrToUsdRate;
         resultElement.textContent = `${amount} INR = ${convertedAmount.toFixed(2)} USD`;
-    } else if (direction === "USDtoINR") {
+    } else if (direction === "USD to INR") {
         convertedAmount = amount * usdToInrRate;
         resultElement.textContent = `${amount} USD = ${convertedAmount.toFixed(2)} INR`;
     } else {
